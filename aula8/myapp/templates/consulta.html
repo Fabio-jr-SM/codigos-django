@@ -15,10 +15,10 @@
         {% for pessoa in pessoas %}
         <tr>
             <th scope="row">{{pessoa.id}}</th>
-            <td>{{}}</td>
-            <td>Brasil</td>
-            <td>Mato Grosso</td>
-            <td>Cuiabá</td>
+            <td>{{pessoa.nome}}</td>
+            <td>{{pessoa.pais}}</td>
+            <td>{{pessoa.estado}}</td>
+            <td>{{pessoa.cidade}}</td>
         </tr>
         {% endfor %}
     </tbody>
