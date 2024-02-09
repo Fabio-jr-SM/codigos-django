@@ -21,4 +21,11 @@ def cadastro_page(request):
         return HttpResponseBadRequest()
 
 def consulta_page(request):
-    return render(request, 'consulta.html')
+    
+    pessoas = Pessoa.objects.all()
+    
+    
+    
+    return render(request, 'consulta.html',{
+        'pessoas':pessoas
+    })

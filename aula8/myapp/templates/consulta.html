@@ -12,13 +12,15 @@
         </tr>
     </thead>
     <tbody>
+        {% for pessoa in pessoas %}
         <tr>
-            <th scope="row">1</th>
-            <td>Filipe</td>
+            <th scope="row">{{pessoa.id}}</th>
+            <td>{{}}</td>
             <td>Brasil</td>
             <td>Mato Grosso</td>
             <td>Cuiabá</td>
         </tr>
+        {% endfor %}
     </tbody>
 </table>
 {% endblock content %}
